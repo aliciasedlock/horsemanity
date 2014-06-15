@@ -172,7 +172,7 @@ var Game = Game || {};
 
     game.checkForMatch = function (keyCode) {
 
-    	if (game.playerOne.control < 100 && game.playerTwo.control < 100) {
+    	if (game.playerOne.control < 100 && game.playerTwo.control < 100 && game.playerOne.currentKey && game.playerTwo.currentKey) {
     		if (game.playerOne.currentKey.code === keyCode) {
 	    		game.playerOne.control += 5;
 	    		game.playerTwo.control -= 5;

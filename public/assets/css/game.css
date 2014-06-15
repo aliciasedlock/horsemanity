@@ -34,7 +34,7 @@
 }
 
 .power.light-horse {
-	background: url("light-power.png") repeat-x;
+	background: url("../images/light-power.png") repeat-x;
 	background-position: 0px 20px;
 	-webkit-animation: moveLightPower .75s infinite;
 	-webkit-animation-timing-function: linear;
@@ -43,12 +43,12 @@
 .light-explosion {
 	height: 200px;
 	width: 64px;
-	background: url("light-exposion.png") no-repeat;
+	background: url("../images/light-exposion.png") no-repeat;
 	float: right;
 }
 
 .power.dark-horse {
-	background: url("dark-power.png") repeat-x;
+	background: url("../images/dark-power.png") repeat-x;
 	background-position: 0px 20px;
 	-webkit-animation: moveDarkPower .75s infinite;
 	-webkit-animation-timing-function: linear;
@@ -57,7 +57,7 @@
 .dark-explosion {
 	height: 200px;
 	width: 64px;
-	background: url("dark-explosion.png") no-repeat;
+	background: url("../images/dark-explosion.png") no-repeat;
 	float: left;
 }
 
@@ -82,56 +82,4 @@
 .dark-horse {
 	-webkit-animation: bobDarkBubble 2s infinite;
 	-webkit-animation-timing-function: ease-out;
-}
-
-@-webkit-keyframes moveLightPower {
-	0% {
-		/*background: url("light-power.png") repeat-x 0px 20px;*/
-		background-position: 0px 20px;
-	}
-
-	100% {
-		/*background: url("light-power.png") repeat-x 400px 20px;*/
-		background-position: 400px 20px;
-	}
-}
-
-@-webkit-keyframes moveDarkPower {
-	0% {
-		/*background: url("light-power.png") repeat-x 0px 20px;*/
-		background-position: 0px 20px;
-	}
-
-	100% {
-		/*background: url("light-power.png") repeat-x 400px 20px;*/
-		background-position: -400px 20px;
-	}
-}
-
-@-webkit-keyframes bobLightBubble {
-	0% {
-		margin-top: 0;
-	}
-
-	50% {
-		margin-top: 20px;
-	}
-
-	100% {
-		margin-top: 0;
-	}
-}
-
-@-webkit-keyframes bobDarkBubble {
-	0% {
-		margin-top: 20px;
-	}
-
-	50% {
-		margin-top: 0;
-	}
-
-	100% {
-		margin-top: 20px;
-	}
 }

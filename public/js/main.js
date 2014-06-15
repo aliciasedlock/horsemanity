@@ -81,6 +81,15 @@ function bindEvents () {
 		document.querySelector(".credits").style.display = "none";
 		document.querySelector(".menu").style.display = "block";
 	}
+
+	document.body.onkeyup = function (event) {
+		if (event.keyCode === 27) {
+			stopAudio();
+			playAudio(introBuffer, introContext);
+			Game.reset();
+			Game.showScene("#startScene");
+		}
+	}
 }
 
 function setUpRequest (url, context, sourceBuffer) {

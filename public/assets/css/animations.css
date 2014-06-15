@@ -1,0 +1,51 @@
+@-webkit-keyframes moveLightPower {
+	0% {
+		/*background: url("light-power.png") repeat-x 0px 20px;*/
+		background-position: 0px 20px;
+	}
+
+	100% {
+		/*background: url("light-power.png") repeat-x 400px 20px;*/
+		background-position: 400px 20px;
+	}
+}
+
+@-webkit-keyframes moveDarkPower {
+	0% {
+		/*background: url("light-power.png") repeat-x 0px 20px;*/
+		background-position: 0px 20px;
+	}
+
+	100% {
+		/*background: url("light-power.png") repeat-x 400px 20px;*/
+		background-position: -400px 20px;
+	}
+}
+
+@-webkit-keyframes bobLightBubble {
+	0% {
+		margin-top: 0;
+	}
+
+	50% {
+		margin-top: 20px;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+@-webkit-keyframes bobDarkBubble {
+	0% {
+		margin-top: 20px;
+	}
+
+	50% {
+		margin-top: 0;
+	}
+
+	100% {
+		margin-top: 20px;
+	}
+}

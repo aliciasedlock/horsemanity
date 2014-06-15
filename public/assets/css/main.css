@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'origicideregular';
-    src: url('fonts/Origicide-webfont.eot');
-    src: url('fonts/Origicide-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Origicide-webfont.woff') format('woff'),
-         url('fonts/Origicide-webfont.ttf') format('truetype'),
-         url('fonts/Origicide-webfont.svg#origicideregular') format('svg');
+    src: url('../fonts/Origicide-webfont.eot');
+    src: url('../fonts/Origicide-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Origicide-webfont.woff') format('woff'),
+         url('../fonts/Origicide-webfont.ttf') format('truetype'),
+         url('../fonts/Origicide-webfont.svg#origicideregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -13,7 +13,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: url("mountain-edit.jpg") no-repeat;
+	background: url("../images/mountain-edit.jpg") no-repeat;
 	background-size: 100%;
 	font-family: "Arial";
 }
