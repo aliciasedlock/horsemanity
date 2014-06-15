@@ -176,7 +176,7 @@ var Game = Game || {};
     		if (game.playerOne.currentKey.code === keyCode) {
 	    		game.playerOne.control += 5;
 	    		game.playerTwo.control -= 5;
-	    		game.playerOne.currentKey = game.getRandomKey();
+	    		game.playerOne.currentKey = game.resetKey();
 
 	    		if (game.playerOne.control === 100) {
 	    			game.gameOver(game.playerOne);
@@ -186,7 +186,7 @@ var Game = Game || {};
 	    	if (game.playerTwo.currentKey.code === keyCode) {
 	    		game.playerTwo.control += 5;
 	    		game.playerOne.control -= 5;
-	    		game.playerTwo.currentKey = game.getRandomKey();
+	    		game.playerTwo.currentKey = game.resetKey();
 
 	    		if (game.playerTwo.control === 100) {
 	    			game.gameOver(game.playerTwo);
@@ -196,6 +196,16 @@ var Game = Game || {};
 	    	game.updatePowerAllocation();
 	    	game.setLetterBubbles();
     	}
+    };
+
+    game.resetKey = function () {
+    	var randomKey = game.getRandomKey();
+
+    	if (game.playerOne.currentKey === randomKey || game.playerTwo.currentKey === randomKey) {
+			randomKey = game.getRandomKey();
+		}
+
+		return randomKey;
     };
 
     game.setLetterBubbles = function () {
@@ -217,7 +227,7 @@ var Game = Game || {};
     };
 
     game.getVictorySound = function () {
-    	
+
     	var request = new XMLHttpRequest();
 		request.open('GET', "assets/audio/WinnerBell.mp3", true);
 		request.responseType = 'arraybuffer';
