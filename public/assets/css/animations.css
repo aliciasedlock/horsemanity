@@ -49,3 +49,15 @@
 		margin-top: 20px;
 	}
 }
+
+@-webkit-keyframes explosionMovement {
+	0% {
+		width: 64px;
+	}
+	50% {
+		width: 84px;
+	}
+	100% {
+		width: 64px;
+	}
+}
