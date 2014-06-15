@@ -141,8 +141,8 @@ var Game = Game || {};
 
     game.start = function () {
 
-    	game.playerOne.currentKey = game.getRandomKey();
-		game.playerTwo.currentKey = game.getRandomKey();
+    	game.playerOne.currentKey = game.resetKey();
+		game.playerTwo.currentKey = game.resetKey();
 
     	game.updatePowerAllocation();
     	game.setLetterBubbles();
@@ -201,9 +201,9 @@ var Game = Game || {};
     game.resetKey = function () {
     	var randomKey = game.getRandomKey();
 
-    	if (game.playerOne.currentKey === randomKey || game.playerTwo.currentKey === randomKey) {
-			randomKey = game.getRandomKey();
-		}
+    	do {
+    		randomKey = game.getRandomKey();
+    	} while (game.playerOne.currentKey === randomKey || game.playerTwo.currentKey === randomKey)
 
 		return randomKey;
     };
