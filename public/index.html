@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/game.css">
+		<title>Horse Combat For Horsemanity</title>
+	</head>
+
+	<body>
+
+		<div id="startScene">
+			<h1>Horse Combat For Horsemanity</h1>
+
+			<div class="menu">
+				<a href="#" id="startGame">Start</a>
+				<a href="#" id="showInstructions">How To Play</a>
+				<a href="#" id="credits">Credits</a>
+			</div>
+			
+			<div class="instructions">
+				<p>
+					A battle of worlds has commensed. The horse captains of the Light and Shadow worlds are in combat to decide who shall rule the horse planet. It is up to you to defeat your opponent!
+				</p>
+				<p>
+					Two players use the same computer to play. Choose to be the Light Horse and the Shadow Horse amongst yourselves. You will see a letter float above your character. As you press the letter, a new letter will appear. Keep pressing letters until you have gained total control. A winner emerges when one side has complete control, as indicated in the power bars on the top of the screen.
+				</p>
+
+				<a href="#" id="quitHowTo">Back</a>
+			</div>
+
+			<div class="credits">
+				<p>Made my <a href="http://aliciability.com">Alicia Sedlock</a> as part of the <a href="http://purplemonkeygamejam.com">Purple Monkey Game Jam</a> (theme "Light and Shadow").</p>
+				<p>Music credit: "Africa" by Toto</p>
+				<a href="#" id="quitCredits">Back</a>
+			</div>
+			
+		</div>
+
+		<div id="endScene">
+			<h1>Winner</h1>
+			<span></span>
+
+			<div class="menu">
+				<a href="#" id="playAgain">Play Again</a>
+				<a href="#" id="mainMenu">Quit</a>
+			</div>
+			
+		</div>
+
+		<div id="mainScene">
+			<div id="powerContainer">
+				<div class="light-horse power">
+					<div class="light-explosion"></div>
+				</div>
+				<div class="dark-horse power">
+					<div class="dark-explosion"></div>
+				</div>
+			</div>
+
+			<div id="characterContainer">
+
+				<div class="light-horse player">
+					<div class="letter-bubble"></div>
+					<img src="assets/light-horse.png" />
+				</div>
+
+				<div class="dark-horse player">
+					<div class="letter-bubble"></div>
+					<img src="assets/dark-horse.png" />
+				</div>
+
+			</div>
+		</div>
+
+		<div id="audioContainer">
+			<audio src="assets/audio/IntroLoop.mp3" loop></audio>
+			<audio src="assets/audio/ChorusLoop.mp3" loop></audio>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="js/game.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</html>

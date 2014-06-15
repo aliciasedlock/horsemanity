@@ -1,0 +1,137 @@
+#characterContainer {
+	width: 100%;
+	height: 420px;
+	position: absolute;
+	bottom: 75px;
+}
+
+.player {
+	height: 200px;
+	width: 250px;
+	margin: 0 100px;
+	text-align: center;
+}
+
+.player img {
+	height: 350px;
+}
+
+.player.light-horse {
+	float: left;
+}
+
+.player.dark-horse {
+	float: right;
+}
+
+#powerContainer {
+	width: 100%;
+}
+
+.power {
+	float: left;
+	height: 135px;
+}
+
+.power.light-horse {
+	background: url("light-power.png") repeat-x;
+	background-position: 0px 20px;
+	-webkit-animation: moveLightPower .75s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.light-explosion {
+	height: 200px;
+	width: 64px;
+	background: url("light-exposion.png") no-repeat;
+	float: right;
+}
+
+.power.dark-horse {
+	background: url("dark-power.png") repeat-x;
+	background-position: 0px 20px;
+	-webkit-animation: moveDarkPower .75s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.dark-explosion {
+	height: 200px;
+	width: 64px;
+	background: url("dark-explosion.png") no-repeat;
+	float: left;
+}
+
+.letter-bubble {
+	width: 100px;
+	background: rgb(255,255,255);
+	border-radius: 7px;
+	border: 5px solid black;
+	font-family: "origicideregular";
+	text-align: center;
+	font-size: 3.75em;
+	padding: .25em 0;
+	margin: 0 auto 25px;
+}
+
+.light-horse {
+	-webkit-animation: bobLightBubble 2s infinite;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-delay: .25s;
+}
+
+.dark-horse {
+	-webkit-animation: bobDarkBubble 2s infinite;
+	-webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes moveLightPower {
+	0% {
+		/*background: url("light-power.png") repeat-x 0px 20px;*/
+		background-position: 0px 20px;
+	}
+
+	100% {
+		/*background: url("light-power.png") repeat-x 400px 20px;*/
+		background-position: 400px 20px;
+	}
+}
+
+@-webkit-keyframes moveDarkPower {
+	0% {
+		/*background: url("light-power.png") repeat-x 0px 20px;*/
+		background-position: 0px 20px;
+	}
+
+	100% {
+		/*background: url("light-power.png") repeat-x 400px 20px;*/
+		background-position: -400px 20px;
+	}
+}
+
+@-webkit-keyframes bobLightBubble {
+	0% {
+		margin-top: 0;
+	}
+
+	50% {
+		margin-top: 10px;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
+
+@-webkit-keyframes bobDarkBubble {
+	0% {
+		margin-top: 10px;
+	}
+
+	50% {
+		margin-top: 0;
+	}
+
+	100% {
+		margin-top: 10px;
+	}
+}
